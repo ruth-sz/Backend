@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 session_start();
 
 //Variavel que verifica se a autenticacao foi feita
@@ -37,3 +38,12 @@ if($usuario_autenticado){
     header('Location: index.php?login=erro_login_invalido');
 }
 ?>
+=======
+    require "R:/XAMPP/chama_ati/valida_login.php" //sobe um nivel hierarquico do diretorio
+    
+    /* se algum usuario mal intencionado tiver acesso ao codigo fonte desse script, por estar no diretorio publico,
+    ele so vera a instrucao de require, pois o conteudo do arquivo estara protegido pelo firewall do SO e longe 
+    do acesso do servidor http, mas a aplicacao quando interpretada pelo php do lado do servidor pode localizar 
+    qualquer arquivo do SO */
+?>
+>>>>>>> 31858b1 (htdocs)
